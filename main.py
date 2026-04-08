@@ -23,8 +23,7 @@ Log:
     return response["choices"][0]["message"]["content"]
 
 
-with open("logs.txt", "r") as file:
-    log_data = file.read()
+log_data = input("Paste your log here: ")
 
 result = analyze_log(log_data)
 
